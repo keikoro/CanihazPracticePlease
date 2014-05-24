@@ -14,17 +14,26 @@
 
 #include <iostream>
 
+// use name space declarations
+using std::cin;
+using std::cout;
+using std::endl;
+
+void getMeasurements();
+
 int main() {
-    std::cout << "Please input the width and height of a rectangle:"
-    << std::endl;
+    cout << "Please input the width and height of a rectangle:"
+    << endl;
 
     int w = 0, h = 0;
-    std::cin >> w >> h;
+    cin >> w >> h;
 
     int area = w * h;
     int perimeter = 2*w + 2*h;
-    std::cout << "The rectangle's area is " << area << " and its "
-    "perimeter is " << perimeter << "!" << std::endl;
+    cout << "The rectangle's area is " << area << " and its "
+    "perimeter is " << perimeter << "!" << endl;
 
     return 0;
 }
+
+void getMeasurements();
