@@ -8,3 +8,19 @@
     and the perimeter of that rectangle.
 */
 
+#include <iostream>
+
+int main() {
+    std::cout << "Please input the width and height of a rectangle:"
+    << std::endl;
+
+    int w = 0, h = 0;
+    std::cin >> w >> h;
+
+    int area = w * h;
+    int perimeter = 2*w + 2*h;
+    std::cout << "The rectangle's area is " << area << " and its "
+    "perimeter is " << perimeter << "!" << std::endl;
+
+    return 0;
+}
