@@ -1,11 +1,11 @@
-/*  CPP excercises
+/*  CPP excercises - 01
 
-    https://en.wikibooks.org/wiki/C%2B%2B_Programming/
-    Exercises/Variables_and_types
-
+    Ex 01
     Write a program that asks the user to type the width and the
     height of a rectangle and then outputs to the screen the area
     and the perimeter of that rectangle.
+    https://en.wikibooks.org/wiki/C%2B%2B_Programming/
+    Exercises/Variables_and_types
 */
 
 #include <iostream>
