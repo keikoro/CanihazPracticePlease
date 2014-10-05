@@ -25,6 +25,14 @@ using std::endl;
 
 void getMeasurements(int *width, int *height);
 
+class Rectangle {
+    int w, h;
+  public:
+    void getMeasurements(int *, int *);
+    int area(void);
+} thisrect;
+
+
 int main() {
     int w;
     int h;
