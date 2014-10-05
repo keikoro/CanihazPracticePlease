@@ -19,14 +19,14 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-void getMeasurements();
+void getMeasurements(int *width, int *height);
 
 int main() {
-    cout << "Please input the width and height of a rectangle:"
-    << endl;
+    int w;
+    int h;
 
-    int w = 0, h = 0;
-    cin >> w >> h;
+    cout << "Please input the width and height of a rectangle:" << endl;
+    getMeasurements(&w, &h);
 
     int area = w * h;
     int perimeter = 2*w + 2*h;
@@ -36,4 +36,11 @@ int main() {
     return 0;
 }
 
-void getMeasurements();
+void getMeasurements(int *width, int *height) {
+    int w = 0;
+    int h = 0;
+    cin >> w >> h;
+
+    *width = w;
+    *height = h;
+}
