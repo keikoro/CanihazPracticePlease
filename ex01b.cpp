@@ -23,36 +23,34 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-void getMeasurements(int *width, int *height);
-
 class Rectangle {
     int w, h;
   public:
-    void getMeasurements(int *, int *);
-    int area(void);
-} thisrect;
+    void getMeasurements(int, int);
+    int area() {
+        return w*h;
+    }
+    int perimeter() {
+        return 2*w+2*h;
+    }
+};
 
+void Rectangle::getMeasurements (int, int) {
+    w = 0;
+    h = 0;
+    cout << "Please input the width and height of a rectangle:" << endl;
+    cin >> w >> h;
+}
 
 int main() {
-    int w;
-    int h;
+    int w = 0;
+    int h = 0;
+    Rectangle myrect;
+    myrect.getMeasurements(w,h);
 
-    cout << "Please input the width and height of a rectangle:" << endl;
-    getMeasurements(&w, &h);
-
-    int area = w * h;
-    int perimeter = 2*w + 2*h;
-    cout << "The rectangle's area is " << area << " and its "
-    "perimeter is " << perimeter << "!" << endl;
+    cout << "The rectangle's area is " << myrect.area() << " and its "
+    "perimeter is " << myrect.perimeter() << "!" << endl;
 
     return 0;
 }
 
-void getMeasurements(int *width, int *height) {
-    int w = 0;
-    int h = 0;
-    cin >> w >> h;
-
-    *width = w;
-    *height = h;
-}
