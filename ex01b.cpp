@@ -36,8 +36,6 @@ class Rectangle {
 };
 
 void Rectangle::getMeasurements (int, int) {
-    w = 0;
-    h = 0;
     cout << "Please input the width and height of a rectangle:" << endl;
     cin >> w >> h;
 }
