@@ -1,4 +1,4 @@
-/*  CPP excercises - 01a
+/*  CPP excercises - 01b
     Continuation of excercise 01.
 
     Ex 01b
